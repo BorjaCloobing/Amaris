@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8FB58DF41F3875EF007E640B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58DF31F3875EF007E640B /* AppDelegate.swift */; };
+		8FB58DF61F3875EF007E640B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58DF51F3875EF007E640B /* ViewController.swift */; };
+		8FB58DF91F3875EF007E640B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58DF71F3875EF007E640B /* Main.storyboard */; };
+		8FB58DFB1F3875EF007E640B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58DFA1F3875EF007E640B /* Assets.xcassets */; };
+		8FB58DFE1F3875EF007E640B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58DFC1F3875EF007E640B /* LaunchScreen.storyboard */; };
+		8FB58E091F3875EF007E640B /* AmarisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E081F3875EF007E640B /* AmarisTests.swift */; };
+		8FB58E141F3875EF007E640B /* AmarisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E131F3875EF007E640B /* AmarisUITests.swift */; };
+		8FB58E221F38ADCF007E640B /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E211F38ADCF007E640B /* Account.swift */; };
+		8FB58E241F38B187007E640B /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E231F38B187007E640B /* Api.swift */; };
+		8FB58E281F3A03D0007E640B /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E271F3A03D0007E640B /* AccountViewModel.swift */; };
+		8FB58E301F3A0ED4007E640B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58E2E1F3A0ED4007E640B /* Interface.storyboard */; };
+		8FB58E321F3A0ED4007E640B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58E311F3A0ED4007E640B /* Assets.xcassets */; };
+		8FB58E391F3A0ED4007E640B /* WatchWidget Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FB58E381F3A0ED4007E640B /* WatchWidget Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FB58E3E1F3A0ED4007E640B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E3D1F3A0ED4007E640B /* InterfaceController.swift */; };
+		8FB58E401F3A0ED4007E640B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB58E3F1F3A0ED4007E640B /* ExtensionDelegate.swift */; };
+		8FB58E421F3A0ED4007E640B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB58E411F3A0ED4007E640B /* Assets.xcassets */; };
+		8FB58E461F3A0ED4007E640B /* WatchWidget.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8FB58E2C1F3A0ED3007E640B /* WatchWidget.app */; };
+		8FDCD0911F3A1E8E00828134 /* AccountRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDCD08F1F3A1DE600828134 /* AccountRowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FB58E051F3875EF007E640B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB58DE81F3875EF007E640B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB58DEF1F3875EF007E640B;
+			remoteInfo = Amaris;
+		};
+		8FB58E101F3875EF007E640B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB58DE81F3875EF007E640B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB58DEF1F3875EF007E640B;
+			remoteInfo = Amaris;
+		};
+		8FB58E3A1F3A0ED4007E640B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB58DE81F3875EF007E640B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB58E371F3A0ED4007E640B;
+			remoteInfo = "WatchWidget Extension";
+		};
+		8FB58E441F3A0ED4007E640B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8FB58DE81F3875EF007E640B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FB58E2B1F3A0ED3007E640B;
+			remoteInfo = WatchWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FB58E4A1F3A0ED4007E640B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FB58E391F3A0ED4007E640B /* WatchWidget Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E4E1F3A0ED4007E640B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8FB58E461F3A0ED4007E640B /* WatchWidget.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8FB58DF01F3875EF007E640B /* Amaris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amaris.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB58DF31F3875EF007E640B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8FB58DF51F3875EF007E640B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FB58DF81F3875EF007E640B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8FB58DFA1F3875EF007E640B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB58DFD1F3875EF007E640B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB58DFF1F3875EF007E640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB58E041F3875EF007E640B /* AmarisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmarisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB58E081F3875EF007E640B /* AmarisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmarisTests.swift; sourceTree = "<group>"; };
+		8FB58E0A1F3875EF007E640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB58E0F1F3875EF007E640B /* AmarisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmarisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB58E131F3875EF007E640B /* AmarisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmarisUITests.swift; sourceTree = "<group>"; };
+		8FB58E151F3875EF007E640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB58E211F38ADCF007E640B /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		8FB58E231F38B187007E640B /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		8FB58E271F3A03D0007E640B /* AccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		8FB58E2C1F3A0ED3007E640B /* WatchWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB58E2F1F3A0ED4007E640B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8FB58E311F3A0ED4007E640B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB58E331F3A0ED4007E640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB58E381F3A0ED4007E640B /* WatchWidget Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchWidget Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FB58E3D1F3A0ED4007E640B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8FB58E3F1F3A0ED4007E640B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8FB58E411F3A0ED4007E640B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8FB58E431F3A0ED4007E640B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FDCD08F1F3A1DE600828134 /* AccountRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8FB58DED1F3875EF007E640B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E011F3875EF007E640B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E0C1F3875EF007E640B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E351F3A0ED4007E640B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8FB58DE71F3875EF007E640B = {
+			isa = PBXGroup;
+			children = (
+				8FB58DF21F3875EF007E640B /* Amaris */,
+				8FB58E071F3875EF007E640B /* AmarisTests */,
+				8FB58E121F3875EF007E640B /* AmarisUITests */,
+				8FB58E2D1F3A0ED4007E640B /* WatchWidget */,
+				8FB58E3C1F3A0ED4007E640B /* WatchWidget Extension */,
+				8FB58DF11F3875EF007E640B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8FB58DF11F3875EF007E640B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58DF01F3875EF007E640B /* Amaris.app */,
+				8FB58E041F3875EF007E640B /* AmarisTests.xctest */,
+				8FB58E0F1F3875EF007E640B /* AmarisUITests.xctest */,
+				8FB58E2C1F3A0ED3007E640B /* WatchWidget.app */,
+				8FB58E381F3A0ED4007E640B /* WatchWidget Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8FB58DF21F3875EF007E640B /* Amaris */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58DF31F3875EF007E640B /* AppDelegate.swift */,
+				8FB58E291F3A0DB8007E640B /* ViewModel */,
+				8FB58E251F38CD23007E640B /* Model */,
+				8FB58E261F38CD34007E640B /* View */,
+				8FB58DFA1F3875EF007E640B /* Assets.xcassets */,
+				8FB58DFF1F3875EF007E640B /* Info.plist */,
+			);
+			path = Amaris;
+			sourceTree = "<group>";
+		};
+		8FB58E071F3875EF007E640B /* AmarisTests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E081F3875EF007E640B /* AmarisTests.swift */,
+				8FB58E0A1F3875EF007E640B /* Info.plist */,
+			);
+			path = AmarisTests;
+			sourceTree = "<group>";
+		};
+		8FB58E121F3875EF007E640B /* AmarisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E131F3875EF007E640B /* AmarisUITests.swift */,
+				8FB58E151F3875EF007E640B /* Info.plist */,
+			);
+			path = AmarisUITests;
+			sourceTree = "<group>";
+		};
+		8FB58E251F38CD23007E640B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E211F38ADCF007E640B /* Account.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8FB58E261F38CD34007E640B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58DF51F3875EF007E640B /* ViewController.swift */,
+				8FB58DF71F3875EF007E640B /* Main.storyboard */,
+				8FB58DFC1F3875EF007E640B /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8FB58E291F3A0DB8007E640B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E231F38B187007E640B /* Api.swift */,
+				8FB58E271F3A03D0007E640B /* AccountViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8FB58E2D1F3A0ED4007E640B /* WatchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E2E1F3A0ED4007E640B /* Interface.storyboard */,
+				8FDCD08F1F3A1DE600828134 /* AccountRowController.swift */,
+				8FB58E311F3A0ED4007E640B /* Assets.xcassets */,
+				8FB58E331F3A0ED4007E640B /* Info.plist */,
+			);
+			path = WatchWidget;
+			sourceTree = "<group>";
+		};
+		8FB58E3C1F3A0ED4007E640B /* WatchWidget Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8FB58E3D1F3A0ED4007E640B /* InterfaceController.swift */,
+				8FB58E3F1F3A0ED4007E640B /* ExtensionDelegate.swift */,
+				8FB58E411F3A0ED4007E640B /* Assets.xcassets */,
+				8FB58E431F3A0ED4007E640B /* Info.plist */,
+			);
+			path = "WatchWidget Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FB58DEF1F3875EF007E640B /* Amaris */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB58E181F3875EF007E640B /* Build configuration list for PBXNativeTarget "Amaris" */;
+			buildPhases = (
+				8FB58DEC1F3875EF007E640B /* Sources */,
+				8FB58DED1F3875EF007E640B /* Frameworks */,
+				8FB58DEE1F3875EF007E640B /* Resources */,
+				8FB58E4E1F3A0ED4007E640B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB58E451F3A0ED4007E640B /* PBXTargetDependency */,
+			);
+			name = Amaris;
+			productName = Amaris;
+			productReference = 8FB58DF01F3875EF007E640B /* Amaris.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FB58E031F3875EF007E640B /* AmarisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB58E1B1F3875EF007E640B /* Build configuration list for PBXNativeTarget "AmarisTests" */;
+			buildPhases = (
+				8FB58E001F3875EF007E640B /* Sources */,
+				8FB58E011F3875EF007E640B /* Frameworks */,
+				8FB58E021F3875EF007E640B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB58E061F3875EF007E640B /* PBXTargetDependency */,
+			);
+			name = AmarisTests;
+			productName = AmarisTests;
+			productReference = 8FB58E041F3875EF007E640B /* AmarisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8FB58E0E1F3875EF007E640B /* AmarisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB58E1E1F3875EF007E640B /* Build configuration list for PBXNativeTarget "AmarisUITests" */;
+			buildPhases = (
+				8FB58E0B1F3875EF007E640B /* Sources */,
+				8FB58E0C1F3875EF007E640B /* Frameworks */,
+				8FB58E0D1F3875EF007E640B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB58E111F3875EF007E640B /* PBXTargetDependency */,
+			);
+			name = AmarisUITests;
+			productName = AmarisUITests;
+			productReference = 8FB58E0F1F3875EF007E640B /* AmarisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		8FB58E2B1F3A0ED3007E640B /* WatchWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB58E4B1F3A0ED4007E640B /* Build configuration list for PBXNativeTarget "WatchWidget" */;
+			buildPhases = (
+				8FB58E2A1F3A0ED3007E640B /* Resources */,
+				8FB58E4A1F3A0ED4007E640B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FB58E3B1F3A0ED4007E640B /* PBXTargetDependency */,
+			);
+			name = WatchWidget;
+			productName = WatchWidget;
+			productReference = 8FB58E2C1F3A0ED3007E640B /* WatchWidget.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8FB58E371F3A0ED4007E640B /* WatchWidget Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FB58E471F3A0ED4007E640B /* Build configuration list for PBXNativeTarget "WatchWidget Extension" */;
+			buildPhases = (
+				8FB58E341F3A0ED4007E640B /* Sources */,
+				8FB58E351F3A0ED4007E640B /* Frameworks */,
+				8FB58E361F3A0ED4007E640B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchWidget Extension";
+			productName = "WatchWidget Extension";
+			productReference = 8FB58E381F3A0ED4007E640B /* WatchWidget Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8FB58DE81F3875EF007E640B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Borja Rodriguez Sánchez";
+				TargetAttributes = {
+					8FB58DEF1F3875EF007E640B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8FB58E031F3875EF007E640B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FB58DEF1F3875EF007E640B;
+					};
+					8FB58E0E1F3875EF007E640B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8FB58DEF1F3875EF007E640B;
+					};
+					8FB58E2B1F3A0ED3007E640B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					8FB58E371F3A0ED4007E640B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8FB58DEB1F3875EF007E640B /* Build configuration list for PBXProject "Amaris" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8FB58DE71F3875EF007E640B;
+			productRefGroup = 8FB58DF11F3875EF007E640B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FB58DEF1F3875EF007E640B /* Amaris */,
+				8FB58E031F3875EF007E640B /* AmarisTests */,
+				8FB58E0E1F3875EF007E640B /* AmarisUITests */,
+				8FB58E2B1F3A0ED3007E640B /* WatchWidget */,
+				8FB58E371F3A0ED4007E640B /* WatchWidget Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8FB58DEE1F3875EF007E640B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58DFE1F3875EF007E640B /* LaunchScreen.storyboard in Resources */,
+				8FB58DFB1F3875EF007E640B /* Assets.xcassets in Resources */,
+				8FB58DF91F3875EF007E640B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E021F3875EF007E640B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E0D1F3875EF007E640B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E2A1F3A0ED3007E640B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58E321F3A0ED4007E640B /* Assets.xcassets in Resources */,
+				8FB58E301F3A0ED4007E640B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E361F3A0ED4007E640B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58E421F3A0ED4007E640B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FB58DEC1F3875EF007E640B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58DF61F3875EF007E640B /* ViewController.swift in Sources */,
+				8FB58E281F3A03D0007E640B /* AccountViewModel.swift in Sources */,
+				8FB58DF41F3875EF007E640B /* AppDelegate.swift in Sources */,
+				8FB58E241F38B187007E640B /* Api.swift in Sources */,
+				8FB58E221F38ADCF007E640B /* Account.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E001F3875EF007E640B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58E091F3875EF007E640B /* AmarisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E0B1F3875EF007E640B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58E141F3875EF007E640B /* AmarisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FB58E341F3A0ED4007E640B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FB58E401F3A0ED4007E640B /* ExtensionDelegate.swift in Sources */,
+				8FDCD0911F3A1E8E00828134 /* AccountRowController.swift in Sources */,
+				8FB58E3E1F3A0ED4007E640B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FB58E061F3875EF007E640B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB58DEF1F3875EF007E640B /* Amaris */;
+			targetProxy = 8FB58E051F3875EF007E640B /* PBXContainerItemProxy */;
+		};
+		8FB58E111F3875EF007E640B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB58DEF1F3875EF007E640B /* Amaris */;
+			targetProxy = 8FB58E101F3875EF007E640B /* PBXContainerItemProxy */;
+		};
+		8FB58E3B1F3A0ED4007E640B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB58E371F3A0ED4007E640B /* WatchWidget Extension */;
+			targetProxy = 8FB58E3A1F3A0ED4007E640B /* PBXContainerItemProxy */;
+		};
+		8FB58E451F3A0ED4007E640B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FB58E2B1F3A0ED3007E640B /* WatchWidget */;
+			targetProxy = 8FB58E441F3A0ED4007E640B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8FB58DF71F3875EF007E640B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB58DF81F3875EF007E640B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB58DFC1F3875EF007E640B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB58DFD1F3875EF007E640B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8FB58E2E1F3A0ED4007E640B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB58E2F1F3A0ED4007E640B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8FB58E161F3875EF007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FB58E171F3875EF007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8FB58E191F3875EF007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Amaris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8FB58E1A1F3875EF007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Amaris/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8FB58E1C1F3875EF007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmarisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.AmarisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaris.app/Amaris";
+			};
+			name = Debug;
+		};
+		8FB58E1D1F3875EF007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AmarisTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.AmarisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Amaris.app/Amaris";
+			};
+			name = Release;
+		};
+		8FB58E1F1F3875EF007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AmarisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.AmarisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Amaris;
+			};
+			name = Debug;
+		};
+		8FB58E201F3875EF007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = AmarisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.AmarisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Amaris;
+			};
+			name = Release;
+		};
+		8FB58E481F3A0ED4007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchWidget Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8FB58E491F3A0ED4007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchWidget Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8FB58E4C1F3A0ED4007E640B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchWidget_Extension;
+				INFOPLIST_FILE = WatchWidget/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8FB58E4D1F3A0ED4007E640B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = WatchWidget_Extension;
+				INFOPLIST_FILE = WatchWidget/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BRS.Amaris.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8FB58DEB1F3875EF007E640B /* Build configuration list for PBXProject "Amaris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E161F3875EF007E640B /* Debug */,
+				8FB58E171F3875EF007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB58E181F3875EF007E640B /* Build configuration list for PBXNativeTarget "Amaris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E191F3875EF007E640B /* Debug */,
+				8FB58E1A1F3875EF007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB58E1B1F3875EF007E640B /* Build configuration list for PBXNativeTarget "AmarisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E1C1F3875EF007E640B /* Debug */,
+				8FB58E1D1F3875EF007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB58E1E1F3875EF007E640B /* Build configuration list for PBXNativeTarget "AmarisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E1F1F3875EF007E640B /* Debug */,
+				8FB58E201F3875EF007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB58E471F3A0ED4007E640B /* Build configuration list for PBXNativeTarget "WatchWidget Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E481F3A0ED4007E640B /* Debug */,
+				8FB58E491F3A0ED4007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FB58E4B1F3A0ED4007E640B /* Build configuration list for PBXNativeTarget "WatchWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB58E4C1F3A0ED4007E640B /* Debug */,
+				8FB58E4D1F3A0ED4007E640B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8FB58DE81F3875EF007E640B /* Project object */;
+}
